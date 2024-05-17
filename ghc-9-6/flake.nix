@@ -13,7 +13,7 @@
         packages = {
           cabal = pkgs.cabal-install;
           ghc = pkgs.haskell.packages.ghc96.ghcWithPackages (p:
-            [ p.pipes ]);
+            [ p.pipes p.zlib ]);
           hls = pkgs.haskell-language-server.override {
             supportedGhcVersions = [ "96" ];
           };
