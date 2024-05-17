@@ -20,6 +20,7 @@
         };
         devShells = {
           default = pkgs.mkShell {
+            buildInputs = with pkgs; [ zlib ];
             nativeBuildInputs = with packages; [ cabal ghc hls ];
           };
         };
